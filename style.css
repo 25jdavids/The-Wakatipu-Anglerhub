@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family: Arial;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: lightblue;
 }
 
@@ -8,6 +8,7 @@ nav{
     background-color: darkblue;
     padding: 15px;
     text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav a{
