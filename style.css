@@ -18,6 +18,14 @@ nav a{
     font-size: 18px;
 }
 
+.nav-link {
+    transition: color 0.4 ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color:teal
+}
+
 header{
     text-align: center;
     padding: 80px 20px;
