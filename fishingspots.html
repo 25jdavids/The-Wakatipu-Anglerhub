@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title> Spots </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spots</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <nav>
-        <a href="Home.html", class="nav-link active">Home</a>
-        <a href="fishingspots.html", class="nav-link">Fishing Spots</a>
-        <a href="map.html", class="nav-link">Map</a>
-        <a href="tips.html", class="nav-link">Tips</a>
-        <a href="weather.html", class="nav-link">Weather</a>
-        <a href="Regulations.html", class="nav-link">Regulations</a>
-        <a href="about.html", class="nav-link">About</a>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="fishingspots.html" class="nav-link">Fishing Spots</a>
+        <a href="map.html" class="nav-link">Map</a>
+        <a href="tips.html" class="nav-link">Tips</a>
+        <a href="weather.html" class="nav-link">Weather</a>
+        <a href="Regulations.html" class="nav-link">Regulations</a>
+        <a href="about.html" class="nav-link">About</a>
     </nav>
 
     <header>
@@ -22,144 +23,127 @@
         <h2>Click a spot to view it on Google Maps</h2>
     </header>
 
-    <section>
+    <!-- Search Input -->
+    <div class="search-container">
+        <input type="text" id="fishSearch" onkeyup="filterSpots()" placeholder="Search for fish (e.g. Salmon, Eel, Perch)...">
+    </div>
 
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/@-45.0197719,168.7253244,16.25z?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D">
+    <section id="spotsGrid">
 
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/@-45.0197719,168.7253244,16.25z">
             <div class="box">
                 <h2>🎣Frankton Arm</h2>
                 <p>Great beginner fishing spot close to Queenstown.</p>
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
                 <p><b>Click to open map →</b></p>
             </div>
         </a>
 
-
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/@-45.0741004,168.5086838,15z?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D">
-
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/@-45.0741004,168.5086838,15z">
             <div class="box">
                 <h2>🎣Bobs Cove</h2>
                 <p>Clear water and quiet fishing area.</p>
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
                 <p><b>Click to open map →</b></p>
             </div>
         </a>
 
-
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/place/Kingston+9793/@-45.3322144,168.7100734,15z/data=!4m6!3m5!1s0xa9d4be3dd65d440d:0x500ef8684795dc0!8m2!3d-45.3385404!4d168.7239657!16zL20vMDQ1ZmM1?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D">
-
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/place/Kingston+9793/">
             <div class="box">
                 <h2>🎣Kingston</h2>
                 <p>Deep water fishing at the southern end of the lake.</p>
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmont</p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
                 <p><b>Click to open map →</b></p>
             </div>
         </a>
 
-
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/place/Glenorchy+9372/@-44.7750602,168.3177969,11.5z/data=!4m6!3m5!1s0xa9d5a41f73b0997f:0x500ef8684797100!8m2!3d-44.8490895!4d168.3874799!16zL20vMDQ0eHNn?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D">
-
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/place/Glenorchy+9372/">
             <div class="box">
                 <h2>🎣Glenorchy</h2>
-                <p>Remote scenic fishing location and multiple river mouths.
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
+                <p>Remote scenic fishing location and multiple river mouths.</p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, Rainbow Trout, Lonfin Eel, Landlocked Chinook Salmon</p>
                 <p><b>Click to open map →</b></p>
             </div>
         </a>
 
-
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/place/Queenstown+Gardens/@-45.0368363,168.656595,15.25z/data=!4m6!3m5!1s0xa9d4e3b497bb09af:0xb114ddabc2902b7!8m2!3d-45.0371873!4d168.6607345!16s%2Fm%2F0n8_wk_?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D">
-
-            <div class="box">
-                <h2>🎣Queenstown Gardens</h2>
-                <p>Easy access fishing right in town.</p>
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
-                <p><b>Click to open map →</b></p>
-            </div>
-        </a>
-         <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/search/Kawarau+River+Lake+Wakatipu+outlet/@-45.0300295,168.7325073,15.75z?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D">
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/search/Kawarau+River+Lake+Wakatipu+outlet/">
             <div class="box">
                 <h2>🎣Kawarau River (Lake Wakatipu outlet)</h2>
                 <p>Strong river flow where Lake Wakatipu drains into the Kawarau River.</p>
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon, European Perch, Longfin Eel</p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon, European Perch, Longfin Eel</p>
+                <p><b>Click to open map →</b></p>
             </div>
         </a>
 
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/place/Devils+Staircase+9793/@-45.2453303,168.7252576,13.79z/data=!4m6!3m5!1s0xa9d4dccef83a1957:0x2e3a168e7b748b53!8m2!3d-45.2266272!4d168.7393131!16s%2Fg%2F11n09knz36?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D">
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/place/Devils+Staircase+9793/">
             <div class="box">
                 <h2>🎣Devils Staircase</h2>
                 <p>Rocky roadside fishing access with deep water.</p>
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
+                <p><b>Click to open map →</b></p>
             </div>
         </a>
 
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/place/Wye+Creek+9371/@-45.132978,168.7459587,14.5z/data=!4m6!3m5!1s0xa9d4de3641d83f35:0x500ef8684795f70!8m2!3d-45.133529!4d168.7575856!16s%2Fg%2F1tgdvck7?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D">
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/place/Wye+Creek+9371/">
             <div class="box">
-                <h2>Wye Creek🎣</h2>
-                <p>Small stream area that meets the wakatipu.
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
+                <h2>🎣Wye Creek</h2>
+                <p>Small stream area that meets the wakatipu.</p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
+                <p><b>Click to open map →</b></p>
             </div>
         </a>
 
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/place/Lake+Johnson/@-45.0066433,168.7294353,15.21z/data=!4m6!3m5!1s0xa9d51e899a463ebd:0x2a00ef86ab645480!8m2!3d-45.0035888!4d168.731933!16s%2Fm%2F0py29bf?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D">
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/place/Lake+Johnson/">
             <div class="box">
-                <h2>Lake Johnson🎣</h2>
+                <h2>🎣Lake Johnson</h2>
                 <p>Quiet hidden lake popular for local fishing.</p>
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon </p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
+                <p><b>Click to open map →</b></p>
             </div>
         </a>
 
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/place/Lake+Hayes/@-44.9810171,168.7862034,14z/data=!3m1!4b1!4m6!3m5!1s0xa9d51f4e22e18d5d:0x2a00ef86ab6451d0!8m2!3d-44.9824237!4d168.8098789!16zL20vMGZqMWh4?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D">
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/place/Lake+Hayes/">
             <div class="box">
-                <h2>Lake Hayes🎣</h2>
+                <h2>🎣Lake Hayes</h2>
                 <p>Calm lake with easy shoreline access.</p>
-                <p><b>Fish:</b> Brown Trout, European perch, Longfin Eel</p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, European perch, Longfin Eel</p>
+                <p><b>Click to open map →</b></p>
             </div>
         </a>
 
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/place/Shotover+Delta/@-45.0177415,168.7630014,15.25z/data=!4m6!3m5!1s0xa9d51f2c6a8b6b1b:0xb2336a1a28d4b500!8m2!3d-45.0173213!4d168.7717242!16s%2Fg%2F11k9k75lvt?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D">
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/place/Shotover+Delta/">
             <div class="box">
-                <h2>Shotover Delta🎣</h2>
-                <p>River delta where the Shotover meets the Kawarau River.
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon, Longfin Eel</p>
+                <h2>🎣Shotover Delta</h2>
+                <p>River delta where the Shotover meets the Kawarau River.</p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon, Longfin Eel</p>
+                <p><b>Click to open map →</b></p>
             </div>
         </a>
 
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/search/?api=1&query=Lake+Dispute+Otago+New+Zealand">
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Lake+Dispute+Otago+New+Zealand">
             <div class="box">
-                <h2>Lake Dispute🎣</h2>
+                <h2>🎣Lake Dispute</h2>
                 <p>Remote alpine lake with less fishing pressure.</p>
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout</p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, Rainbow Trout</p>
+                <p><b>Click to open map →</b></p>
             </div>
         </a>
 
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/search/?api=1&query=Lake+Moke+Queenstown">
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Lake+Moke+Queenstown">
             <div class="box">
-                <h2>Lake Moke🎣</h2>
+                <h2>🎣Lake Moke</h2>
                 <p>Small quiet lake surrounded by mountains.</p>
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout, Eel</p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, Rainbow Trout, Eel</p>
+                <p><b>Click to open map →</b></p>
             </div>
         </a>
 
-        <a class="box-link" target="_blank"
-           href="https://www.google.com/maps/search/?api=1&query=Lake+Tewa+New+Zealand">
+        <a class="box-link" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Lake+Tewa+New+Zealand">
             <div class="box">
-                <h2>Lake Tewa Jacks Point🎣</h2>
-                <p>Small lake located on the Jacks Point golf course.</p>
-                <p><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
+                <h2>🎣Lake Tewa Jacks Point</h2>
+                <p>Small lake located on the Jacks Point Golf Course.</p>
+                <p class="fish-list"><b>Fish:</b> Brown Trout, Rainbow Trout, Landlocked Chinook Salmon</p>
+                <p><b>Click to open map →</b></p>
             </div>
         </a>
 
@@ -169,6 +153,23 @@
         <p>&copy; 2026 The Wakatipu Anglerhub</p>
         <p>Phone: 0204573633 Email: TheWakaAngler@gmail.com</p>
     </footer>
+
+    <!-- Filter Script -->
+    <script>
+        function filterSpots() {
+            const input = document.getElementById('fishSearch').value.toLowerCase();
+            const cards = document.querySelectorAll('.box-link');
+
+            cards.forEach(card => {
+                const fishText = card.querySelector('.fish-list').textContent.toLowerCase();
+                if (fishText.includes(input)) {
+                    card.style.display = "";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>
