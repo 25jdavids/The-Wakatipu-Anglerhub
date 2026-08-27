@@ -62,7 +62,12 @@ header p{
 section{
     padding: 55px 25px;
     text-align: center;
-    background-color:ivory;
+    background-color: ivory;
+}
+
+p{
+    text-align: center;
+    color:black;
 }
 
 .box-link{
@@ -78,11 +83,11 @@ section{
     box-shadow: 0 7px 14px rgba(47, 79, 47, 0.35);
 }
 
-.box{
-    background-color:transparent;
-    padding: 30px;
-    transition: 0.3s ease;
-}
+.box{ 
+    background-color: rgba(255, 255, 240, 0.60); 
+    padding: 30px; 
+    transition: 0.3s ease; 
+} 
 
 .box h2{
     color:darkblue;
@@ -94,15 +99,15 @@ section{
     line-height: 1.7;
 }
 
-.box-link:hover .box {
-    background-color: ivory;
-    transform: scale(1.03);
-}
+.box-link\:hover .box{ 
+    background-color: ivory; 
+    transform: scale(1.03); 
+} 
 /* Added blue to my colour scheme to represent the water when fishing which should flow perfectly into my website */
-.box-link:hover {
-    border-color: steelblue;
-    outline: 2px solid dodgerblue;
-}
+.box-link:hover{ 
+    border-color: steelblue; 
+    outline: 2px solid dodgerblue; 
+} 
 .fishing-spots-page section{
     background-color: rgba(47, 79, 47, 0.85);
 }
@@ -115,10 +120,6 @@ section{
     color: Black;
 }
 
-.map-section{
-    padding: 55px 25px;
-    background-color: beige;
-}
 
 .map-box{
     background-color: floralwhite;
