@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spots</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav>
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="fishingspots.html" class="nav-link">Fishing Spots</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="fishingspots.html" class="nav-link active">Fishing Spots</a>
         <a href="map.html" class="nav-link">Map</a>
         <a href="tips.html" class="nav-link">Tips</a>
         <a href="weather.html" class="nav-link">Weather</a>
-        <a href="Regulations.html" class="nav-link">Regulations</a>
         <a href="about.html" class="nav-link">About</a>
     </nav>
 
@@ -23,14 +21,19 @@
         <h2>Click a spot to view it on Google Maps</h2>
     </header>
 
-    <!-- Search Input -->
+    <!-- This search bar is to search for specific types of fish which will bring up the exact spots that stock those fish to make it easy for more targeting and experienced anglers to find what they are looking for instead of going through a whole website intended for beginners -->
     <div class="search-container">
         <input type="text" id="fishSearch" onkeyup="filterSpots()" placeholder="Search for fish (e.g. Salmon, Eel, Perch)...">
     </div>
 
     <section id="spotsGrid">
 
-        <a class="box-link" target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagLtprXz7R0YM5SCNUjr8YxSDR5qSji9kY2Up-aEk_g&s=10">
+        <!-- Using images in the background of the fishing spots buttons to give ideas of what the spot looks like to users -->
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Frankton+Arm+Lake+Wakatipu"
+           style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagLtprXz7R0YM5SCNUjr8YxSDR5qSji9kY2Up-aEk_g&s=10');">
             <div class="box">
                 <h2>🎣Frankton Arm</h2>
                 <p>Great beginner fishing spot close to Queenstown.</p>
@@ -39,7 +42,11 @@
             </div>
         </a>
 
-        <a class="box-link" target="_blank" href="https://www.doc.govt.nz/thumbs/hero/contentassets/9f872c2131994159a2b0f2f46154b2f1/bobs-cove-nature-walk1920.jpg">
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Bobs+Cove+Lake+Wakatipu"
+           style="background-image: url('https://www.doc.govt.nz/thumbs/hero/contentassets/9f872c2131994159a2b0f2f46154b2f1/bobs-cove-nature-walk1920.jpg');">
             <div class="box">
                 <h2>🎣Bobs Cove</h2>
                 <p>Clear water and quiet fishing area.</p>
@@ -48,7 +55,11 @@
             </div>
         </a>
 
-        <a class="box-link" target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsipgR0zV6DQ5zwjpCDVlLqBvxi_aIXl2GwIudXmP-YfQ9gU4EmsA9jrH1&s=10">
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Kingston+Lake+Wakatipu"
+           style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsipgR0zV6DQ5zwjpCDVlLqBvxi_aIXl2GwIudXmP-YfQ9gU4EmsA9jrH1&s=10');">
             <div class="box">
                 <h2>🎣Kingston</h2>
                 <p>Deep water fishing at the southern end of the lake.</p>
@@ -57,7 +68,11 @@
             </div>
         </a>
 
-        <a class="box-link" target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwLNjy09DzQQkLk4f_5Pgu4ku3Fltp4ueh7GCt7txnnCVlwmZv2UzZupxy&s=10">
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Glenorchy+Lake+Wakatipu"
+           style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwLNjy09DzQQkLk4f_5Pgu4ku3Fltp4ueh7GCt7txnnCVlwmZv2UzZupxy&s=10');">
             <div class="box">
                 <h2>🎣Glenorchy</h2>
                 <p>Remote scenic fishing location and multiple river mouths.</p>
@@ -66,7 +81,11 @@
             </div>
         </a>
 
-        <a class="box-link" target="_blank" href="https://experiencequeenstown.com/_image?href=https%3A%2F%2Fexperiencequeenstown.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KXW8FFB2CKR5CZYT7EHZRCRX.jpg&w=1920&h=1280&q=75&f=webp&fit=cover&position=center">
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Kawarau+River+Lake+Wakatipu+Outlet"
+           style="background-image: url('https://experiencequeenstown.com/_image?href=https%3A%2F%2Fexperiencequeenstown.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KXW8FFB2CKR5CZYT7EHZRCRX.jpg&w=1920&h=1280&q=75&f=webp&fit=cover&position=center');">
             <div class="box">
                 <h2>🎣Kawarau River (Lake Wakatipu outlet)</h2>
                 <p>Strong river flow where Lake Wakatipu drains into the Kawarau River.</p>
@@ -75,7 +94,11 @@
             </div>
         </a>
 
-        <a class="box-link" target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlmUPXRioiixTrmF3j-AYVlVWqNaCD_NyGYeNebnQ8hMYuBWTwovW_8Hhd&s=10">
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Devils+Staircase+Lake+Wakatipu"
+           style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlmUPXRioiixTrmF3j-AYVlVWqNaCD_NyGYeNebnQ8hMYuBWTwovW_8Hhd&s=10');">
             <div class="box">
                 <h2>🎣Devils Staircase</h2>
                 <p>Rocky roadside fishing access with deep water.</p>
@@ -84,7 +107,11 @@
             </div>
         </a>
 
-        <a class="box-link" target="_blank" href="https://admin.planmywalk.nz/assets/Tracks/OTA.Lower-Wye-Creek-Track.Campermate.webp">
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Wye+Creek+Lake+Wakatipu"
+           style="background-image: url('https://admin.planmywalk.nz/assets/Tracks/OTA.Lower-Wye-Creek-Track.Campermate.webp');">
             <div class="box">
                 <h2>🎣Wye Creek</h2>
                 <p>Small stream area that meets the wakatipu.</p>
@@ -93,7 +120,11 @@
             </div>
         </a>
 
-        <a class="box-link" target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbiV3vEpNVjoTyjwsA2ZA65jfm0FJQB8otQrY1ZmI84MBnVsLOQf3FIWM&s=10">
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Lake+Johnson+Queenstown"
+           style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbiV3vEpNVjoTyjwsA2ZA65jfm0FJQB8otQrY1ZmI84MBnVsLOQf3FIWM&s=10');">
             <div class="box">
                 <h2>🎣Lake Johnson</h2>
                 <p>Quiet hidden lake popular for local fishing.</p>
@@ -102,7 +133,11 @@
             </div>
         </a>
 
-        <a class="box-link" target="_blank" href="https://trademe.tmcdn.co.nz/photoserver/plus/2312931133.jpg">
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Lake+Hayes+Queenstown"
+           style="background-image: url('https://trademe.tmcdn.co.nz/photoserver/plus/2312931133.jpg');">
             <div class="box">
                 <h2>🎣Lake Hayes</h2>
                 <p>Calm lake with easy shoreline access.</p>
@@ -111,7 +146,11 @@
             </div>
         </a>
 
-        <a class="box-link" target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKL1-t93lcHmA0q4unY9Xh2Gy4zSLbHA3rbsEfQSFTBfV3OG9i4ysoiq1h&s=10">
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Shotover+Delta+Queenstown"
+           style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKL1-t93lcHmA0q4unY9Xh2Gy4zSLbHA3rbsEfQSFTBfV3OG9i4ysoiq1h&s=10');">
             <div class="box">
                 <h2>🎣Shotover Delta</h2>
                 <p>River delta where the Shotover meets the Kawarau River.</p>
@@ -120,7 +159,11 @@
             </div>
         </a>
 
-        <a class="box-link" target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpTon2obIVVu8Y8R2xh0w49i98klIzf9m5ljXPMFAw-yFVFXvBaSPManz&s=10">
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Lake+Dispute+New+Zealand"
+           style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpTon2obIVVu8Y8R2xh0w49i98klIzf9m5ljXPMFAw-yFVFXvBaSPManz&s=10');">
             <div class="box">
                 <h2>🎣Lake Dispute</h2>
                 <p>Remote alpine lake with less fishing pressure.</p>
@@ -129,7 +172,11 @@
             </div>
         </a>
 
-        <a class="box-link" target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQvrcYBvyedyCV-3poHWXjk3bz3eKz9Eqxr9LAn7ZDKzmItGChkf-ieBc&s=10">
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Lake+Moke+Queenstown"
+           style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQvrcYBvyedyCV-3poHWXjk3bz3eKz9Eqxr9LAn7ZDKzmItGChkf-ieBc&s=10');">
             <div class="box">
                 <h2>🎣Lake Moke</h2>
                 <p>Small quiet lake surrounded by mountains.</p>
@@ -138,7 +185,11 @@
             </div>
         </a>
 
-        <a class="box-link" target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStwcn6NVdMpZjeckFLp5HZoV5KrQq9YNUzbE-ZRLKAO79AQHoTISSTJNA&s=10">
+
+        <a class="box-link"
+           target="_blank"
+           href="https://www.google.com/maps/search/?api=1&query=Lake+Tewa+Jacks+Point"
+           style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStwcn6NVdMpZjeckFLp5HZoV5KrQq9YNUzbE-ZRLKAO79AQHoTISSTJNA&s=10');">
             <div class="box">
                 <h2>🎣Lake Tewa Jacks Point</h2>
                 <p>Small lake located on the Jacks Point Golf Course.</p>
@@ -154,7 +205,7 @@
         <p>Phone: 0204573633 Email: TheWakaAngler@gmail.com</p>
     </footer>
 
-    <!-- Filter Script -->
+    <!-- This is the code for the fish search bar -->
     <script>
         function filterSpots() {
             const input = document.getElementById('fishSearch').value.toLowerCase();
@@ -162,6 +213,7 @@
 
             cards.forEach(card => {
                 const fishText = card.querySelector('.fish-list').textContent.toLowerCase();
+
                 if (fishText.includes(input)) {
                     card.style.display = "";
                 } else {
